@@ -1,0 +1,11 @@
+{
+	"projects": [
+		{
+			"name": "Minecraft Mod Manager",
+			"description": "Inspired by package managers like apt, npm and pip, Minecraft Mod Manager is a tool to download, update, and manage mods for your Minecraft server using the Modrinth and CursgeForge APIs.",
+			"link": "https://github.com/kennethprose/MinecraftModManager",
+			"img": "/project_img/mcmodmanager.png",
+			"alt": "Console log of a sample use of the program."
+		}
+	]
+}
