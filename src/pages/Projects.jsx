@@ -20,11 +20,7 @@ function ProjectPage() {
 	}, [])
 
 	return (
-		<div className='min-h-full px-3 mt-14 mx-auto max-w-5xl w-5/6'>
-			<h1 className='px-2 text-5xl project_title'>
-				Projects
-			</h1>
-			<div class='divider'></div>
+		<div className='min-h-full w-[95%] mx-auto my-5 md:my-15 md:max-w-[1000px] md:w-3/4'>
 			{projectData.projects.map((e) => {
 				return (
 					<div className='card md:card-side bg-white'>
@@ -50,7 +46,7 @@ function ProjectPage() {
 								>
 									{/* <Github className='text-xl' /> */}
 									{/* &nbsp;&nbsp; */}
-                                    Source
+									Source
 								</a>
 							</div>
 						</div>

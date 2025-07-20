@@ -10,9 +10,9 @@ function Home() {
 		document.getElementById("throne_img").style.opacity = "1";
 		setXThrone(
 			e.clientY -
-				document.getElementById("throne_img").height -
-				20 +
-				window.pageYOffset
+			document.getElementById("throne_img").height -
+			20 +
+			window.pageYOffset
 		);
 		setYThrone(e.clientX - 90);
 	}
