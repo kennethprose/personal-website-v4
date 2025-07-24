@@ -1,9 +1,9 @@
 ---
-import HeaderLink from './HeaderLink.astro';
-import { SITE_TITLE } from '../consts';
+import HeaderLink from "./HeaderLink.astro";
+import { SITE_TITLE } from "../consts";
 ---
 
-<header id="header">
+<header id="header" class="bg-white dark:bg-gray-800">
 	<div class="site-links">
 		<HeaderLink href="/">Home</HeaderLink>
 		<HeaderLink href="/projects">Projects</HeaderLink>
@@ -16,7 +16,6 @@ import { SITE_TITLE } from '../consts';
 		margin: 0;
 		padding: 0 1em;
 		display: flex;
-		background-color: white;
 		margin-top: 1em;
 		width: 75%;
 		max-width: 1000px;

@@ -1,11 +1,11 @@
 ---
-import type { CollectionEntry } from 'astro:content';
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import FormattedDate from '../components/FormattedDate.astro';
+import type { CollectionEntry } from "astro:content";
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import FormattedDate from "../components/FormattedDate.astro";
 
-type Props = CollectionEntry<'blog'>['data'];
+type Props = CollectionEntry<"blog">["data"];
 
 const { title, description, pubDate, updatedDate } = Astro.props;
 ---
@@ -24,7 +24,6 @@ const { title, description, pubDate, updatedDate } = Astro.props;
 				max-width: calc(100% - 2em);
 				margin: auto;
 				padding: 1em;
-				color: rgb(var(--gray-dark));
 			}
 			.title {
 				margin-bottom: 1em;
@@ -39,7 +38,6 @@ const { title, description, pubDate, updatedDate } = Astro.props;
 			}
 			.date {
 				margin-bottom: 0.5em;
-				color: rgb(var(--gray));
 			}
 			.last-updated-on {
 				font-style: italic;
@@ -47,10 +45,12 @@ const { title, description, pubDate, updatedDate } = Astro.props;
 		</style>
 	</head>
 
-	<body>
+	<body
+		class="bg-[#e4e4e8] dark:bg-gray-900 text-gray-900 dark:text-gray-300"
+	>
 		<Header />
 		<main>
-			<article>
+			<article class="mt-5">
 				<div class="prose">
 					<div class="title">
 						<h1>{title}</h1>
@@ -59,7 +59,8 @@ const { title, description, pubDate, updatedDate } = Astro.props;
 							{
 								updatedDate && (
 									<div class="last-updated-on">
-										Last updated on <FormattedDate date={updatedDate} />
+										Last updated on{" "}
+										<FormattedDate date={updatedDate} />
 									</div>
 								)
 							}

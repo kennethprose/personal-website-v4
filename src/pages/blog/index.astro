@@ -16,23 +16,25 @@ const posts = (await getCollection("blog")).sort(
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
-	<body>
+	<body
+		class="bg-[#e4e4e8] dark:bg-gray-900 text-gray-900 dark:text-gray-100"
+	>
 		<Header />
-		<main class="mx-auto md:max-w-[1000px] md:w-3/4">
+		<main class="mx-auto md:max-w-[800px] md:w-3/4">
 			<section class="grid grid-cols-1 gap-5 my-5 md:my-15">
 				{
 					posts.map((post) => (
 						<a href={`/blog/${post.id}/`}>
-							<div class="card md:card-side bg-white rounded-3xl">
+							<div class="card md:card-side bg-white dark:bg-gray-800 rounded-3xl">
 								<div class="card-body p-2">
 									<h2 class="card-title text-xl font-bold ml-3 mt-1">
 										{post.data.title}
 									</h2>
-									<div class="bg-[#F0F0F4] p-4 rounded-3xl">
-										<p class="card-subtitle text-lg text-gray-700">
+									<div class="bg-[#F0F0F4] dark:bg-gray-900 p-4 rounded-3xl">
+										<p class="card-subtitle text-lg text-gray-700 dark:text-gray-300">
 											{post.data.description}
 										</p>
-										<p class="card-date text-sm text-gray-500">
+										<p class="card-date text-sm text-gray-500 dark:text-gray-400 mt-2">
 											<FormattedDate
 												date={post.data.pubDate}
 											/>

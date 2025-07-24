@@ -23,7 +23,7 @@ function ProjectPage() {
 		<div className='min-h-full w-[95%] mx-auto my-5 md:my-15 md:max-w-[1000px] md:w-3/4'>
 			{projectData.projects.map((e) => {
 				return (
-					<div className='card md:card-side bg-white'>
+					<div className='card md:card-side bg-white dark:bg-gray-800'>
 						<figure className='pt-3 px-3 md:p-0 md:pl-3 md:py-3 md:min-w-100'>
 							<img
 								src={e.img}
@@ -39,7 +39,7 @@ function ProjectPage() {
 							</p>
 							<div className='card-actions'>
 								<a
-									className='btn btn-neutral btn-outline hover:bg-transparent'
+									className='btn light:btn-neutral btn-outline hover:bg-transparent'
 									href={e.link}
 									target='_blank'
 									rel='noreferrer'
