@@ -36,8 +36,7 @@ body {
 	text-align: left;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
-	font-size: 20px;
-	line-height: 1.7;
+	line-height: 1.6;
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
@@ -124,4 +123,37 @@ hr {
 	clip-path: inset(50%);
 	/* added line to stop words getting smushed together (as they go onto separate lines and some screen readers do not understand line feeds as a space */
 	white-space: nowrap;
+}
+
+/* Fixing Tailwind's font size reset */
+@layer base {
+	h1 {
+		font-size: var(--text-3xl);
+		font-weight: bold;
+	}
+
+	h2 {
+		font-size: var(--text-2xl);
+		font-weight: bold;
+	}
+
+	h3 {
+		font-size: var(--text-xl);
+		font-weight: bold;
+	}
+
+	h4 {
+		font-size: var(--text-lg);
+		font-weight: bold;
+	}
+
+	h5 {
+		font-size: var(--text-md);
+		font-weight: bold;
+	}
+
+	h6 {
+		font-size: var(--text-sm);
+		font-weight: bold;
+	}
 }
