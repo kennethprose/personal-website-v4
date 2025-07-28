@@ -48,10 +48,6 @@ b {
 	font-weight: 700;
 }
 
-.prose p {
-	margin-bottom: 2em;
-}
-
 textarea {
 	width: 100%;
 	font-size: 16px;
@@ -123,37 +119,4 @@ hr {
 	clip-path: inset(50%);
 	/* added line to stop words getting smushed together (as they go onto separate lines and some screen readers do not understand line feeds as a space */
 	white-space: nowrap;
-}
-
-/* Fixing Tailwind's font size reset */
-@layer base {
-	h1 {
-		font-size: var(--text-3xl);
-		font-weight: bold;
-	}
-
-	h2 {
-		font-size: var(--text-2xl);
-		font-weight: bold;
-	}
-
-	h3 {
-		font-size: var(--text-xl);
-		font-weight: bold;
-	}
-
-	h4 {
-		font-size: var(--text-lg);
-		font-weight: bold;
-	}
-
-	h5 {
-		font-size: var(--text-md);
-		font-weight: bold;
-	}
-
-	h6 {
-		font-size: var(--text-sm);
-		font-weight: bold;
-	}
 }
